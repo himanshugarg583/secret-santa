@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* header */
+.header {
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.header p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* upload cards */
+.upload-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+.upload-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.upload-card .label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.upload-card .desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.dropzone {
+  border: 2px dashed #d0d0d0;
+  border-radius: 6px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+
+.dropzone:hover {
+  border-color: #4a90d9;
+  background: #f0f6ff;
+}
+
+.dropzone.active {
+  border-color: #4a90d9;
+  background: #f0f6ff;
+}
+
+.dropzone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dropzone .icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #999;
+}
+
+.dropzone .text {
+  font-size: 13px;
+  color: #888;
+}
+
+.file-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: #e8f5e9;
+  border-radius: 20px;
+  color: #2e7d32;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* button */
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #1557b0;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* results */
+.results {
+  margin-top: 32px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.results-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.count-badge {
+  padding: 3px 10px;
+  background: #e8f5e9;
+  border-radius: 20px;
+  color: #2e7d32;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.table-wrapper {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead {
+  background: #fafafa;
+}
+
+th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #888;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+.col-num {
+  color: #999;
+  font-weight: 500;
+  width: 36px;
+}
+
+.col-arrow {
+  text-align: center;
+  width: 36px;
+  color: #4a90d9;
+  font-weight: 600;
+}
+
+.col-email {
+  color: #666;
+  font-size: 12px;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #1a73e8;
+  border: 1px solid #1a73e8;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-download:hover {
+  background: #f0f6ff;
+}
+
+/* error */
+.error-msg {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #fce4ec;
+  border: 1px solid #ef9a9a;
+  border-radius: 6px;
+  color: #c62828;
+  font-size: 13px;
+}
+
+/* spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px 16px 40px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  th, td {
+    padding: 8px 10px;
+  }
+}
